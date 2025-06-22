@@ -16,7 +16,7 @@ function App() {
   };
 
   const deleteValue = () => {   
-    if(counter <= -10)
+    if(counter <= 0)
     {
         alert("You've reached the minimum value of -10");
         return;
