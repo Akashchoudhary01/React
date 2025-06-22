@@ -12,3 +12,4 @@ function Btn({ ColorName, clrValue, setColor}) {
 }
 
 export default Btn;
+``
