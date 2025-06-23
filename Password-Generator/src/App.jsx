@@ -55,7 +55,7 @@ function App() {
     </div>
     <div className='flex justify-center mt-3 flex-col gap-4'>
 
-      <button onClick={copyPasswordToClipbord} className='outline-none items-center rounded-md text-2xl bg-blue-600 py-1  px-3 shrink-0'>Copy</button>
+      <button onClick={copyPasswordToClipbord} className='outline-none items-center rounded-md text-2xl bg-blue-600 py-1 hover:bg-blue-700 active:bg-yellow-400 px-3 shrink-0'>Copy</button>
   <div className='flex justify-center items-center mt-3 gap-4'>
   <input
     type="range"
