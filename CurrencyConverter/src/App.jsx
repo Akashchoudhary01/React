@@ -31,14 +31,19 @@ function App() {
       }}
     >
       <div className="w-full">
-        <div className="w-full max-w-md mx-auto border border-gray-60 rounded-lg p-5 backdrop-blur-sm bg-white/30">
+        <div className="w-full max-w-screen-sm h-screen border border-gray-600 rounded-lg p-5  backdrop-blur-sm bg-white/50 fixed top-0 right-0">
+        <h1 className='from-neutral-950 text-3xl'>Currency Converter</h1>
+        <p className="text-xl text-black mt-2">
+  Convert between currencies using real-time exchange rates.
+</p>
           <form
             onSubmit={(e) => {
               e.preventDefault();
               convert();
             }}
+            e
           >
-            <div className="w-full mb-1">
+            <div className="w-full mb-1 mt-32">
               <InputFild
                 label="From"
                 amount={amount}
