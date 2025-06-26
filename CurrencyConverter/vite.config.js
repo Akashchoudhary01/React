@@ -3,7 +3,6 @@ import react from '@vitejs/plugin-react'
 
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/currency-converter/', // use your repo name
+  base: '/CurrencyConverter/', // ✅ leading and trailing slash
   plugins: [react()],
 });
-
