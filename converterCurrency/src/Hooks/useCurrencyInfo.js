@@ -1,18 +1,23 @@
-import { useState , useEffect } from "react";
+import { useState, useEffect } from "react";
 
-//custom hook
-function useCurrencyInfo(currency){
-    const [data , setData] = useState({})
-    useEffect(()=>{
-        fetch(`https://api.exchangerate-api.com/v4/latest/${currency}`)
-        .then((res) => res.json())
-        .then((res) => setData(res[currency]))
-        console.table(data);
+// Custom hook
+function useCurrencyInfo(currency) {
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    fetch(`https://api.exchangerate-api.com/v4/latest/${currency}`)
+      .then((res) => res.json())
+      .then((res) => {
+        setData(res.rates); // ✅ Correct key
+      })
+      .catch((error) => {
+        console.error("Failed to fetch exchange rates:", error);
+        setData({});
         
-    } , [currency])
+      });
+  }, [currency]);
 
-    return data ;
-
-
+  return data;
 }
+
 export default useCurrencyInfo;
