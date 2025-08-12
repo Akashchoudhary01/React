@@ -3,6 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .logo {
