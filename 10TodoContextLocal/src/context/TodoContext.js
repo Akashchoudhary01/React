@@ -12,7 +12,7 @@ export const TodoContext = createContext({
     addTodo: (todo) =>{},
     editTodo : (todo , id) =>{},
     deleteTodo :(id)=>{},
-    isChecked :(id) =>{},
+    isChecked :(id) =>{}
 });
 
 export const useTodo =()=>{
